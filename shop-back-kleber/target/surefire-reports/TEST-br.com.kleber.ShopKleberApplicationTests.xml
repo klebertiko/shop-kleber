@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="br.com.kleber.ShopKleberApplicationTests" time="0.01" tests="1" errors="1" skipped="0" failures="0">
+  <properties>
+    <property name="java.runtime.name" value="OpenJDK Runtime Environment"/>
+    <property name="sun.boot.library.path" value="/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64"/>
+    <property name="java.vm.version" value="25.121-b13"/>
+    <property name="java.vm.vendor" value="Oracle Corporation"/>
+    <property name="maven.multiModuleProjectDirectory" value="/home/kleber/Desenvolvimento/projetosIntelliJIDEA/shop-kleber"/>
+    <property name="java.vendor.url" value="http://java.oracle.com/"/>
+    <property name="path.separator" value=":"/>
+    <property name="guice.disable.misplaced.annotation.check" value="true"/>
+    <property name="java.vm.name" value="OpenJDK 64-Bit Server VM"/>
+    <property name="file.encoding.pkg" value="sun.io"/>
+    <property name="user.country" value="BR"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="sun.os.patch.level" value="unknown"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="user.dir" value="/home/kleber/Desenvolvimento/projetosIntelliJIDEA/shop-kleber"/>
+    <property name="java.runtime.version" value="1.8.0_121-8u121-b13-4-b13"/>
+    <property name="java.awt.graphicsenv" value="sun.awt.X11GraphicsEnvironment"/>
+    <property name="java.endorsed.dirs" value="/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/endorsed"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="java.io.tmpdir" value="/tmp"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="os.name" value="Linux"/>
+    <property name="classworlds.conf" value="/home/kleber/Desenvolvimento/tools/apache-maven-3.3.9/bin/m2.conf"/>
+    <property name="sun.jnu.encoding" value="UTF-8"/>
+    <property name="java.library.path" value="/usr/java/packages/lib/amd64:/usr/lib/x86_64-linux-gnu/jni:/lib/x86_64-linux-gnu:/usr/lib/x86_64-linux-gnu:/usr/lib/jni:/lib:/usr/lib"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="java.class.version" value="52.0"/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="os.version" value="4.9.0-kali3-amd64"/>
+    <property name="user.home" value="/home/kleber"/>
+    <property name="user.timezone" value="America/Sao_Paulo"/>
+    <property name="java.awt.printerjob" value="sun.print.PSPrinterJob"/>
+    <property name="file.encoding" value="UTF-8"/>
+    <property name="java.specification.version" value="1.8"/>
+    <property name="user.name" value="kleber"/>
+    <property name="java.class.path" value="/home/kleber/Desenvolvimento/tools/apache-maven-3.3.9/boot/plexus-classworlds-2.5.2.jar"/>
+    <property name="java.vm.specification.version" value="1.8"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="java.home" value="/usr/lib/jvm/java-8-openjdk-amd64/jre"/>
+    <property name="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher clean install"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="user.language" value="pt"/>
+    <property name="awt.toolkit" value="sun.awt.X11.XToolkit"/>
+    <property name="java.vm.info" value="mixed mode"/>
+    <property name="java.version" value="1.8.0_121"/>
+    <property name="java.ext.dirs" value="/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/ext:/usr/java/packages/lib/ext"/>
+    <property name="securerandom.source" value="file:/dev/./urandom"/>
+    <property name="sun.boot.class.path" value="/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/resources.jar:/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/rt.jar:/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/sunrsasign.jar:/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/jsse.jar:/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/jce.jar:/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/charsets.jar:/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/jfr.jar:/usr/lib/jvm/java-8-openjdk-amd64/jre/classes"/>
+    <property name="java.vendor" value="Oracle Corporation"/>
+    <property name="maven.home" value="/home/kleber/Desenvolvimento/tools/apache-maven-3.3.9"/>
+    <property name="file.separator" value="/"/>
+    <property name="java.vendor.url.bug" value="http://bugreport.sun.com/bugreport/"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="sun.desktop" value="gnome"/>
+    <property name="sun.cpu.isalist" value=""/>
+  </properties>
+  <testcase name="initializationError" classname="br.com.kleber.ShopKleberApplicationTests" time="0.01">
+    <error message="Unable to find a @SpringBootConfiguration, you need to use @ContextConfiguration or @SpringBootTest(classes=...) with your test" type="java.lang.IllegalStateException"><![CDATA[java.lang.IllegalStateException: Unable to find a @SpringBootConfiguration, you need to use @ContextConfiguration or @SpringBootTest(classes=...) with your test
+	at org.springframework.util.Assert.state(Assert.java:71)
+	at org.springframework.boot.test.context.SpringBootTestContextBootstrapper.getOrFindConfigurationClasses(SpringBootTestContextBootstrapper.java:229)
+	at org.springframework.boot.test.context.SpringBootTestContextBootstrapper.processMergedContextConfiguration(SpringBootTestContextBootstrapper.java:149)
+	at org.springframework.test.context.support.AbstractTestContextBootstrapper.buildMergedContextConfiguration(AbstractTestContextBootstrapper.java:407)
+	at org.springframework.test.context.support.AbstractTestContextBootstrapper.buildDefaultMergedContextConfiguration(AbstractTestContextBootstrapper.java:323)
+	at org.springframework.test.context.support.AbstractTestContextBootstrapper.buildMergedContextConfiguration(AbstractTestContextBootstrapper.java:277)
+	at org.springframework.test.context.support.AbstractTestContextBootstrapper.buildTestContext(AbstractTestContextBootstrapper.java:112)
+	at org.springframework.boot.test.context.SpringBootTestContextBootstrapper.buildTestContext(SpringBootTestContextBootstrapper.java:93)
+	at org.springframework.test.context.TestContextManager.<init>(TestContextManager.java:135)
+	at org.springframework.test.context.TestContextManager.<init>(TestContextManager.java:120)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.createTestContextManager(SpringJUnit4ClassRunner.java:150)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.<init>(SpringJUnit4ClassRunner.java:141)
+	at org.springframework.test.context.junit4.SpringRunner.<init>(SpringRunner.java:49)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.junit.internal.builders.AnnotatedBuilder.buildRunner(AnnotatedBuilder.java:104)
+	at org.junit.internal.builders.AnnotatedBuilder.runnerForClass(AnnotatedBuilder.java:86)
+	at org.junit.runners.model.RunnerBuilder.safeRunnerForClass(RunnerBuilder.java:59)
+	at org.junit.internal.builders.AllDefaultPossibilitiesBuilder.runnerForClass(AllDefaultPossibilitiesBuilder.java:26)
+	at org.junit.runners.model.RunnerBuilder.safeRunnerForClass(RunnerBuilder.java:59)
+	at org.junit.internal.requests.ClassRequest.getRunner(ClassRequest.java:33)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:283)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeWithRerun(JUnit4Provider.java:173)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:153)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:128)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:203)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:155)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:103)
+]]></error>
+    <system-out><![CDATA[16:22:18.318 [main] DEBUG org.springframework.test.context.junit4.SpringJUnit4ClassRunner - SpringJUnit4ClassRunner constructor called with [class br.com.kleber.ShopKleberApplicationTests]
+16:22:18.324 [main] DEBUG org.springframework.test.context.BootstrapUtils - Instantiating CacheAwareContextLoaderDelegate from class [org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate]
+16:22:18.334 [main] DEBUG org.springframework.test.context.BootstrapUtils - Instantiating BootstrapContext using constructor [public org.springframework.test.context.support.DefaultBootstrapContext(java.lang.Class,org.springframework.test.context.CacheAwareContextLoaderDelegate)]
+16:22:18.396 [main] DEBUG org.springframework.test.context.BootstrapUtils - Instantiating TestContextBootstrapper for test class [br.com.kleber.ShopKleberApplicationTests] from class [org.springframework.boot.test.context.SpringBootTestContextBootstrapper]
+16:22:18.406 [main] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Neither @ContextConfiguration nor @ContextHierarchy found for test class [br.com.kleber.ShopKleberApplicationTests], using SpringBootContextLoader
+16:22:18.410 [main] DEBUG org.springframework.test.context.support.AbstractContextLoader - Did not detect default resource location for test class [br.com.kleber.ShopKleberApplicationTests]: class path resource [br/com/kleber/ShopKleberApplicationTests-context.xml] does not exist
+16:22:18.410 [main] DEBUG org.springframework.test.context.support.AbstractContextLoader - Did not detect default resource location for test class [br.com.kleber.ShopKleberApplicationTests]: class path resource [br/com/kleber/ShopKleberApplicationTestsContext.groovy] does not exist
+16:22:18.410 [main] INFO org.springframework.test.context.support.AbstractContextLoader - Could not detect default resource locations for test class [br.com.kleber.ShopKleberApplicationTests]: no resource found for suffixes {-context.xml, Context.groovy}.
+16:22:18.411 [main] INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [br.com.kleber.ShopKleberApplicationTests]: ShopKleberApplicationTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+16:22:18.446 [main] DEBUG org.springframework.test.context.support.ActiveProfilesUtils - Could not find an 'annotation declaring class' for annotation type [org.springframework.test.context.ActiveProfiles] and class [br.com.kleber.ShopKleberApplicationTests]
+16:22:18.454 [main] DEBUG org.springframework.core.env.StandardEnvironment - Adding [systemProperties] PropertySource with lowest search precedence
+16:22:18.455 [main] DEBUG org.springframework.core.env.StandardEnvironment - Adding [systemEnvironment] PropertySource with lowest search precedence
+16:22:18.455 [main] DEBUG org.springframework.core.env.StandardEnvironment - Initialized StandardEnvironment with PropertySources [systemProperties,systemEnvironment]
+16:22:18.469 [main] DEBUG org.springframework.core.io.support.PathMatchingResourcePatternResolver - Resolved classpath location [br/com/kleber/] to resources [URL [file:/home/kleber/Desenvolvimento/projetosIntelliJIDEA/shop-kleber/shop-back-kleber/target/test-classes/br/com/kleber/], URL [file:/home/kleber/Desenvolvimento/projetosIntelliJIDEA/shop-kleber/shop-back-kleber/target/classes/br/com/kleber/]]
+16:22:18.469 [main] DEBUG org.springframework.core.io.support.PathMatchingResourcePatternResolver - Looking for matching resources in directory tree [/home/kleber/Desenvolvimento/projetosIntelliJIDEA/shop-kleber/shop-back-kleber/target/test-classes/br/com/kleber]
+16:22:18.470 [main] DEBUG org.springframework.core.io.support.PathMatchingResourcePatternResolver - Searching directory [/home/kleber/Desenvolvimento/projetosIntelliJIDEA/shop-kleber/shop-back-kleber/target/test-classes/br/com/kleber] for files matching pattern [/home/kleber/Desenvolvimento/projetosIntelliJIDEA/shop-kleber/shop-back-kleber/target/test-classes/br/com/kleber/*.class]
+16:22:18.472 [main] DEBUG org.springframework.core.io.support.PathMatchingResourcePatternResolver - Looking for matching resources in directory tree [/home/kleber/Desenvolvimento/projetosIntelliJIDEA/shop-kleber/shop-back-kleber/target/classes/br/com/kleber]
+16:22:18.473 [main] DEBUG org.springframework.core.io.support.PathMatchingResourcePatternResolver - Searching directory [/home/kleber/Desenvolvimento/projetosIntelliJIDEA/shop-kleber/shop-back-kleber/target/classes/br/com/kleber] for files matching pattern [/home/kleber/Desenvolvimento/projetosIntelliJIDEA/shop-kleber/shop-back-kleber/target/classes/br/com/kleber/*.class]
+16:22:18.473 [main] DEBUG org.springframework.core.io.support.PathMatchingResourcePatternResolver - Resolved location pattern [classpath*:br/com/kleber/*.class] to resources [file [/home/kleber/Desenvolvimento/projetosIntelliJIDEA/shop-kleber/shop-back-kleber/target/test-classes/br/com/kleber/ShopKleberApplicationTests.class]]
+16:22:18.490 [main] DEBUG org.springframework.core.io.support.PathMatchingResourcePatternResolver - Resolved classpath location [br/com/] to resources [URL [file:/home/kleber/Desenvolvimento/projetosIntelliJIDEA/shop-kleber/shop-back-kleber/target/test-classes/br/com/], URL [file:/home/kleber/Desenvolvimento/projetosIntelliJIDEA/shop-kleber/shop-back-kleber/target/classes/br/com/]]
+16:22:18.491 [main] DEBUG org.springframework.core.io.support.PathMatchingResourcePatternResolver - Looking for matching resources in directory tree [/home/kleber/Desenvolvimento/projetosIntelliJIDEA/shop-kleber/shop-back-kleber/target/test-classes/br/com]
+16:22:18.491 [main] DEBUG org.springframework.core.io.support.PathMatchingResourcePatternResolver - Searching directory [/home/kleber/Desenvolvimento/projetosIntelliJIDEA/shop-kleber/shop-back-kleber/target/test-classes/br/com] for files matching pattern [/home/kleber/Desenvolvimento/projetosIntelliJIDEA/shop-kleber/shop-back-kleber/target/test-classes/br/com/*.class]
+16:22:18.492 [main] DEBUG org.springframework.core.io.support.PathMatchingResourcePatternResolver - Looking for matching resources in directory tree [/home/kleber/Desenvolvimento/projetosIntelliJIDEA/shop-kleber/shop-back-kleber/target/classes/br/com]
+16:22:18.492 [main] DEBUG org.springframework.core.io.support.PathMatchingResourcePatternResolver - Searching directory [/home/kleber/Desenvolvimento/projetosIntelliJIDEA/shop-kleber/shop-back-kleber/target/classes/br/com] for files matching pattern [/home/kleber/Desenvolvimento/projetosIntelliJIDEA/shop-kleber/shop-back-kleber/target/classes/br/com/*.class]
+16:22:18.492 [main] DEBUG org.springframework.core.io.support.PathMatchingResourcePatternResolver - Resolved location pattern [classpath*:br/com/*.class] to resources []
+16:22:18.493 [main] DEBUG org.springframework.core.io.support.PathMatchingResourcePatternResolver - Resolved classpath location [br/] to resources [URL [file:/home/kleber/Desenvolvimento/projetosIntelliJIDEA/shop-kleber/shop-back-kleber/target/test-classes/br/], URL [file:/home/kleber/Desenvolvimento/projetosIntelliJIDEA/shop-kleber/shop-back-kleber/target/classes/br/]]
+16:22:18.493 [main] DEBUG org.springframework.core.io.support.PathMatchingResourcePatternResolver - Looking for matching resources in directory tree [/home/kleber/Desenvolvimento/projetosIntelliJIDEA/shop-kleber/shop-back-kleber/target/test-classes/br]
+16:22:18.493 [main] DEBUG org.springframework.core.io.support.PathMatchingResourcePatternResolver - Searching directory [/home/kleber/Desenvolvimento/projetosIntelliJIDEA/shop-kleber/shop-back-kleber/target/test-classes/br] for files matching pattern [/home/kleber/Desenvolvimento/projetosIntelliJIDEA/shop-kleber/shop-back-kleber/target/test-classes/br/*.class]
+16:22:18.493 [main] DEBUG org.springframework.core.io.support.PathMatchingResourcePatternResolver - Looking for matching resources in directory tree [/home/kleber/Desenvolvimento/projetosIntelliJIDEA/shop-kleber/shop-back-kleber/target/classes/br]
+16:22:18.494 [main] DEBUG org.springframework.core.io.support.PathMatchingResourcePatternResolver - Searching directory [/home/kleber/Desenvolvimento/projetosIntelliJIDEA/shop-kleber/shop-back-kleber/target/classes/br] for files matching pattern [/home/kleber/Desenvolvimento/projetosIntelliJIDEA/shop-kleber/shop-back-kleber/target/classes/br/*.class]
+16:22:18.494 [main] DEBUG org.springframework.core.io.support.PathMatchingResourcePatternResolver - Resolved location pattern [classpath*:br/*.class] to resources []
+16:22:18.497 [main] DEBUG org.springframework.test.context.junit4.SpringJUnit4ClassRunner - SpringJUnit4ClassRunner constructor called with [class br.com.kleber.ShopKleberApplicationTests]
+16:22:18.497 [main] DEBUG org.springframework.test.context.BootstrapUtils - Instantiating CacheAwareContextLoaderDelegate from class [org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate]
+16:22:18.497 [main] DEBUG org.springframework.test.context.BootstrapUtils - Instantiating BootstrapContext using constructor [public org.springframework.test.context.support.DefaultBootstrapContext(java.lang.Class,org.springframework.test.context.CacheAwareContextLoaderDelegate)]
+16:22:18.498 [main] DEBUG org.springframework.test.context.BootstrapUtils - Instantiating TestContextBootstrapper for test class [br.com.kleber.ShopKleberApplicationTests] from class [org.springframework.boot.test.context.SpringBootTestContextBootstrapper]
+16:22:18.498 [main] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Neither @ContextConfiguration nor @ContextHierarchy found for test class [br.com.kleber.ShopKleberApplicationTests], using SpringBootContextLoader
+16:22:18.499 [main] DEBUG org.springframework.test.context.support.AbstractContextLoader - Did not detect default resource location for test class [br.com.kleber.ShopKleberApplicationTests]: class path resource [br/com/kleber/ShopKleberApplicationTests-context.xml] does not exist
+16:22:18.499 [main] DEBUG org.springframework.test.context.support.AbstractContextLoader - Did not detect default resource location for test class [br.com.kleber.ShopKleberApplicationTests]: class path resource [br/com/kleber/ShopKleberApplicationTestsContext.groovy] does not exist
+16:22:18.499 [main] INFO org.springframework.test.context.support.AbstractContextLoader - Could not detect default resource locations for test class [br.com.kleber.ShopKleberApplicationTests]: no resource found for suffixes {-context.xml, Context.groovy}.
+16:22:18.499 [main] INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [br.com.kleber.ShopKleberApplicationTests]: ShopKleberApplicationTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+16:22:18.505 [main] DEBUG org.springframework.test.context.support.ActiveProfilesUtils - Could not find an 'annotation declaring class' for annotation type [org.springframework.test.context.ActiveProfiles] and class [br.com.kleber.ShopKleberApplicationTests]
+16:22:18.506 [main] DEBUG org.springframework.core.env.StandardEnvironment - Adding [systemProperties] PropertySource with lowest search precedence
+16:22:18.506 [main] DEBUG org.springframework.core.env.StandardEnvironment - Adding [systemEnvironment] PropertySource with lowest search precedence
+16:22:18.506 [main] DEBUG org.springframework.core.env.StandardEnvironment - Initialized StandardEnvironment with PropertySources [systemProperties,systemEnvironment]
+16:22:18.507 [main] DEBUG org.springframework.core.io.support.PathMatchingResourcePatternResolver - Resolved classpath location [br/com/kleber/] to resources [URL [file:/home/kleber/Desenvolvimento/projetosIntelliJIDEA/shop-kleber/shop-back-kleber/target/test-classes/br/com/kleber/], URL [file:/home/kleber/Desenvolvimento/projetosIntelliJIDEA/shop-kleber/shop-back-kleber/target/classes/br/com/kleber/]]
+16:22:18.507 [main] DEBUG org.springframework.core.io.support.PathMatchingResourcePatternResolver - Looking for matching resources in directory tree [/home/kleber/Desenvolvimento/projetosIntelliJIDEA/shop-kleber/shop-back-kleber/target/test-classes/br/com/kleber]
+16:22:18.507 [main] DEBUG org.springframework.core.io.support.PathMatchingResourcePatternResolver - Searching directory [/home/kleber/Desenvolvimento/projetosIntelliJIDEA/shop-kleber/shop-back-kleber/target/test-classes/br/com/kleber] for files matching pattern [/home/kleber/Desenvolvimento/projetosIntelliJIDEA/shop-kleber/shop-back-kleber/target/test-classes/br/com/kleber/*.class]
+16:22:18.508 [main] DEBUG org.springframework.core.io.support.PathMatchingResourcePatternResolver - Looking for matching resources in directory tree [/home/kleber/Desenvolvimento/projetosIntelliJIDEA/shop-kleber/shop-back-kleber/target/classes/br/com/kleber]
+16:22:18.509 [main] DEBUG org.springframework.core.io.support.PathMatchingResourcePatternResolver - Searching directory [/home/kleber/Desenvolvimento/projetosIntelliJIDEA/shop-kleber/shop-back-kleber/target/classes/br/com/kleber] for files matching pattern [/home/kleber/Desenvolvimento/projetosIntelliJIDEA/shop-kleber/shop-back-kleber/target/classes/br/com/kleber/*.class]
+16:22:18.509 [main] DEBUG org.springframework.core.io.support.PathMatchingResourcePatternResolver - Resolved location pattern [classpath*:br/com/kleber/*.class] to resources [file [/home/kleber/Desenvolvimento/projetosIntelliJIDEA/shop-kleber/shop-back-kleber/target/test-classes/br/com/kleber/ShopKleberApplicationTests.class]]
+16:22:18.511 [main] DEBUG org.springframework.core.io.support.PathMatchingResourcePatternResolver - Resolved classpath location [br/com/] to resources [URL [file:/home/kleber/Desenvolvimento/projetosIntelliJIDEA/shop-kleber/shop-back-kleber/target/test-classes/br/com/], URL [file:/home/kleber/Desenvolvimento/projetosIntelliJIDEA/shop-kleber/shop-back-kleber/target/classes/br/com/]]
+16:22:18.511 [main] DEBUG org.springframework.core.io.support.PathMatchingResourcePatternResolver - Looking for matching resources in directory tree [/home/kleber/Desenvolvimento/projetosIntelliJIDEA/shop-kleber/shop-back-kleber/target/test-classes/br/com]
+16:22:18.511 [main] DEBUG org.springframework.core.io.support.PathMatchingResourcePatternResolver - Searching directory [/home/kleber/Desenvolvimento/projetosIntelliJIDEA/shop-kleber/shop-back-kleber/target/test-classes/br/com] for files matching pattern [/home/kleber/Desenvolvimento/projetosIntelliJIDEA/shop-kleber/shop-back-kleber/target/test-classes/br/com/*.class]
+16:22:18.511 [main] DEBUG org.springframework.core.io.support.PathMatchingResourcePatternResolver - Looking for matching resources in directory tree [/home/kleber/Desenvolvimento/projetosIntelliJIDEA/shop-kleber/shop-back-kleber/target/classes/br/com]
+16:22:18.511 [main] DEBUG org.springframework.core.io.support.PathMatchingResourcePatternResolver - Searching directory [/home/kleber/Desenvolvimento/projetosIntelliJIDEA/shop-kleber/shop-back-kleber/target/classes/br/com] for files matching pattern [/home/kleber/Desenvolvimento/projetosIntelliJIDEA/shop-kleber/shop-back-kleber/target/classes/br/com/*.class]
+16:22:18.512 [main] DEBUG org.springframework.core.io.support.PathMatchingResourcePatternResolver - Resolved location pattern [classpath*:br/com/*.class] to resources []
+16:22:18.512 [main] DEBUG org.springframework.core.io.support.PathMatchingResourcePatternResolver - Resolved classpath location [br/] to resources [URL [file:/home/kleber/Desenvolvimento/projetosIntelliJIDEA/shop-kleber/shop-back-kleber/target/test-classes/br/], URL [file:/home/kleber/Desenvolvimento/projetosIntelliJIDEA/shop-kleber/shop-back-kleber/target/classes/br/]]
+16:22:18.512 [main] DEBUG org.springframework.core.io.support.PathMatchingResourcePatternResolver - Looking for matching resources in directory tree [/home/kleber/Desenvolvimento/projetosIntelliJIDEA/shop-kleber/shop-back-kleber/target/test-classes/br]
+16:22:18.512 [main] DEBUG org.springframework.core.io.support.PathMatchingResourcePatternResolver - Searching directory [/home/kleber/Desenvolvimento/projetosIntelliJIDEA/shop-kleber/shop-back-kleber/target/test-classes/br] for files matching pattern [/home/kleber/Desenvolvimento/projetosIntelliJIDEA/shop-kleber/shop-back-kleber/target/test-classes/br/*.class]
+16:22:18.513 [main] DEBUG org.springframework.core.io.support.PathMatchingResourcePatternResolver - Looking for matching resources in directory tree [/home/kleber/Desenvolvimento/projetosIntelliJIDEA/shop-kleber/shop-back-kleber/target/classes/br]
+16:22:18.513 [main] DEBUG org.springframework.core.io.support.PathMatchingResourcePatternResolver - Searching directory [/home/kleber/Desenvolvimento/projetosIntelliJIDEA/shop-kleber/shop-back-kleber/target/classes/br] for files matching pattern [/home/kleber/Desenvolvimento/projetosIntelliJIDEA/shop-kleber/shop-back-kleber/target/classes/br/*.class]
+16:22:18.513 [main] DEBUG org.springframework.core.io.support.PathMatchingResourcePatternResolver - Resolved location pattern [classpath*:br/*.class] to resources []
+]]></system-out>
+  </testcase>
+</testsuite>

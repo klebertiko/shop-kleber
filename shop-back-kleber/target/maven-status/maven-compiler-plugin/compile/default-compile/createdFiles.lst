@@ -1,0 +1,4 @@
+br/com/kleber/shop/controller/ShopController.class
+br/com/kleber/shop/controller/WelcomeController.class
+br/com/kleber/shop/ShopKleberApplication.class
+br/com/kleber/shop/service/ShopService.class
