@@ -1,4 +1,4 @@
-package br.com.kleber;
+package br.com.kleber.shop;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -9,8 +9,9 @@ import org.springframework.test.context.junit4.SpringRunner;
 @SpringBootTest
 public class ShopKleberApplicationTests {
 
-	@Test
-	public void contextLoads() {
-	}
+  @Test
+  public void test() {
+    System.out.println("Teste");
+  }
 
 }
