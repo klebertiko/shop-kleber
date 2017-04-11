@@ -1,6 +1,0 @@
-spring:
-  application:
-    name: shop-kleber
-
-server:
-  port: 9090
