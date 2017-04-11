@@ -4,7 +4,6 @@ import { FormsModule } from '@angular/forms';
 import {HttpModule, JsonpModule} from '@angular/http';
 
 import { AppComponent } from './app.component';
-import { BsDropdownModule } from 'ngx-bootstrap/dropdown';
 
 @NgModule({
   declarations: [
@@ -14,8 +13,7 @@ import { BsDropdownModule } from 'ngx-bootstrap/dropdown';
     BrowserModule,
     FormsModule,
     HttpModule,
-    JsonpModule,
-    [BsDropdownModule.forRoot()]
+    JsonpModule
   ],
   providers: [],
   bootstrap: [AppComponent]
