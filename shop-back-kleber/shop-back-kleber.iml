@@ -27,7 +27,7 @@
     <orderEntry type="library" name="Maven: org.slf4j:log4j-over-slf4j:1.7.25" level="project" />
     <orderEntry type="library" scope="RUNTIME" name="Maven: org.yaml:snakeyaml:1.18" level="project" />
     <orderEntry type="library" name="Maven: org.springframework.boot:spring-boot-starter-reactor-netty:2.0.0.BUILD-SNAPSHOT" level="project" />
-    <orderEntry type="library" name="Maven: io.projectreactor.ipc:reactor-netty:0.6.2.RELEASE" level="project" />
+    <orderEntry type="library" name="Maven: io.projectreactor.ipc:reactor-netty:0.6.3.BUILD-SNAPSHOT" level="project" />
     <orderEntry type="library" name="Maven: io.netty:netty-codec-http:4.1.9.Final" level="project" />
     <orderEntry type="library" name="Maven: io.netty:netty-codec:4.1.9.Final" level="project" />
     <orderEntry type="library" name="Maven: io.netty:netty-handler:4.1.9.Final" level="project" />
@@ -38,7 +38,7 @@
     <orderEntry type="library" name="Maven: io.netty:netty-codec-socks:4.1.9.Final" level="project" />
     <orderEntry type="library" name="Maven: io.netty:netty-transport-native-epoll:4.1.8.Final" level="project" />
     <orderEntry type="library" name="Maven: io.netty:netty-common:4.1.9.Final" level="project" />
-    <orderEntry type="library" name="Maven: io.projectreactor.ipc:reactor-ipc:0.6.1.RELEASE" level="project" />
+    <orderEntry type="library" name="Maven: io.projectreactor.ipc:reactor-ipc:0.6.2.BUILD-SNAPSHOT" level="project" />
     <orderEntry type="library" name="Maven: com.fasterxml.jackson.core:jackson-databind:2.9.0.pr2" level="project" />
     <orderEntry type="library" name="Maven: com.fasterxml.jackson.core:jackson-annotations:2.9.0.pr2" level="project" />
     <orderEntry type="library" name="Maven: com.fasterxml.jackson.core:jackson-core:2.9.0.pr2" level="project" />
@@ -51,7 +51,7 @@
     <orderEntry type="library" name="Maven: org.springframework:spring-beans:5.0.0.BUILD-SNAPSHOT" level="project" />
     <orderEntry type="library" name="Maven: org.springframework:spring-context:5.0.0.BUILD-SNAPSHOT" level="project" />
     <orderEntry type="library" name="Maven: org.springframework:spring-webflux:5.0.0.BUILD-SNAPSHOT" level="project" />
-    <orderEntry type="library" name="Maven: io.projectreactor:reactor-core:3.0.6.RELEASE" level="project" />
+    <orderEntry type="library" name="Maven: io.projectreactor:reactor-core:3.1.0.BUILD-SNAPSHOT" level="project" />
     <orderEntry type="library" name="Maven: org.reactivestreams:reactive-streams:1.0.0" level="project" />
     <orderEntry type="library" name="Maven: org.springframework.boot:spring-boot-starter-web:2.0.0.BUILD-SNAPSHOT" level="project" />
     <orderEntry type="library" name="Maven: org.springframework.boot:spring-boot-starter-tomcat:2.0.0.BUILD-SNAPSHOT" level="project" />
