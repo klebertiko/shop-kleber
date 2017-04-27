@@ -9,9 +9,9 @@ import org.springframework.test.context.junit4.SpringRunner;
 @SpringBootTest
 public class ShopKleberApplicationTests {
 
-  @Test
-  public void test() {
-    System.out.println("Teste");
-  }
+    @Test
+    public void test() {
+        System.out.println("Teste");
+    }
 
 }

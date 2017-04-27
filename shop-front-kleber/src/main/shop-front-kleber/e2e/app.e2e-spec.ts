@@ -1,10 +1,10 @@
-import { ShopKleberPage } from './app.po';
+import {ShopFrontKleberPage} from "./app.po";
 
-describe('shop-kleber App', () => {
-  let page: ShopKleberPage;
+describe('shop-front-kleber App', () => {
+  let page: ShopFrontKleberPage;
 
   beforeEach(() => {
-    page = new ShopKleberPage();
+    page = new ShopFrontKleberPage();
   });
 
   it('should display message saying app works', () => {

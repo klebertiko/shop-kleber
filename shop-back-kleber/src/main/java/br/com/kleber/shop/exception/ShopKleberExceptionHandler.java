@@ -1,7 +1,10 @@
 package br.com.kleber.shop.exception;
 
 import org.springframework.http.HttpStatus;
-import org.springframework.web.bind.annotation.*;
+import org.springframework.web.bind.annotation.ExceptionHandler;
+import org.springframework.web.bind.annotation.ResponseBody;
+import org.springframework.web.bind.annotation.ResponseStatus;
+import org.springframework.web.bind.annotation.RestControllerAdvice;
 
 @RestControllerAdvice
 public class ShopKleberExceptionHandler {
@@ -11,14 +14,6 @@ public class ShopKleberExceptionHandler {
     @ResponseBody
     public ShopKleberExceptionResponseMessage handleBadRequest(ShopKleberException shopKleberException) {
         ShopKleberExceptionResponseMessage shopKleberExceptionResponseMessage = new ShopKleberExceptionResponseMessage(HttpStatus.BAD_REQUEST.getReasonPhrase(), shopKleberException.getMessage());
-        return shopKleberExceptionResponseMessage;
-    }
-
-    @ResponseStatus(HttpStatus.UNAUTHORIZED)
-    @ExceptionHandler(UnauthorizedShopKleberException.class)
-    @ResponseBody
-    public ShopKleberExceptionResponseMessage handleUnauthorized(UnauthorizedShopKleberException unauthorizedShopKleberException) {
-        ShopKleberExceptionResponseMessage shopKleberExceptionResponseMessage = new ShopKleberExceptionResponseMessage(HttpStatus.UNAUTHORIZED.getReasonPhrase(), unauthorizedShopKleberException.getMessage());
         return shopKleberExceptionResponseMessage;
     }
 
