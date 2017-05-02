@@ -7,20 +7,31 @@ import com.fasterxml.jackson.annotation.JsonProperty;
 import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.core.userdetails.UserDetails;
 
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.Id;
 import java.util.Collection;
 
 /**
  * Created by kleber on 24/04/17.
  */
+@Entity
 public class Customer implements UserDetails {
 
-    private final Long id;
+    @Id
+    @GeneratedValue
+    private Long id;
 
-    private final String email;
+    private String email;
 
-    private final String password;
+    private String password;
 
-    private final String paymentIdentification;
+    private String paymentIdentification;
+
+
+    public Customer() {
+
+    }
 
     @JsonCreator
     public Customer(

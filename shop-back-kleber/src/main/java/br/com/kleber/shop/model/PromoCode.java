@@ -6,9 +6,6 @@ import com.fasterxml.jackson.annotation.JsonProperty;
 import java.io.Serializable;
 import java.math.BigDecimal;
 
-/**
- * Created by renan on 08/04/17.
- */
 public class PromoCode implements Serializable {
 
     private static final long serialVersionUID = -5768922521579782272L;

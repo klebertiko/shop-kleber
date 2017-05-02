@@ -23,7 +23,7 @@ public class OrderService {
 
     private final PromoCodeService promoCodeService;
 
-    private final BigDecimal discountInstallmentCount;
+    private final BigDecimal discount;
 
     private final MoipService moipService;
 
@@ -32,10 +32,10 @@ public class OrderService {
     private final HttpSession httpSession;
 
     @Autowired
-    public OrderService(@Value("${addition.installment.count.1x}") String discount, PromoCodeService promoCodeService, MoipService moipService, ObjectMapper objectMapper, HttpSession httpSession) {
+    public OrderService(@Value("${addition.discount}") String discount, PromoCodeService promoCodeService, MoipService moipService, ObjectMapper objectMapper, HttpSession httpSession) {
         this.moipService = moipService;
         this.objectMapper = objectMapper;
-        this.discountInstallmentCount = BigDecimal.valueOf(Double.valueOf(discount != null ? discount : "0"));
+        this.discount = BigDecimal.valueOf(Double.valueOf(discount != null ? discount : "0"));
         this.promoCodeService = promoCodeService;
         this.httpSession = httpSession;
     }
@@ -69,7 +69,7 @@ public class OrderService {
         // additional
         BigDecimal additional = BigDecimal.ZERO;
         if (preOrderRequest.getInstallmentCount() != null && preOrderRequest.getInstallmentCount() > 1) {
-            additional = preOrderRequest.applyAdditional(amount, discountInstallmentCount);
+            additional = preOrderRequest.applyAdditional(amount, discount);
             amount = amount.add(additional);
         }
 

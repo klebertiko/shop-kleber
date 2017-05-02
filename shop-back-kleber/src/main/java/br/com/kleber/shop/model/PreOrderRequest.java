@@ -8,9 +8,6 @@ import java.io.Serializable;
 import java.math.BigDecimal;
 import java.util.Collection;
 
-/**
- * Created by renan on 08/04/17.
- */
 public class PreOrderRequest implements Serializable {
 
     private static final long serialVersionUID = -2481459967132385278L;

@@ -4,6 +4,7 @@ import br.com.kleber.shop.model.Product;
 import br.com.kleber.shop.repository.ProductRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+import reactor.core.publisher.Flux;
 
 import java.util.Collection;
 import java.util.Optional;

@@ -1,8 +1,5 @@
 package br.com.kleber.shop.model;
 
-import com.fasterxml.jackson.annotation.JsonCreator;
-import com.fasterxml.jackson.annotation.JsonGetter;
-
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
@@ -15,22 +12,32 @@ import java.math.BigDecimal;
 @Entity
 public class Product implements Serializable {
 
-    private final String name;
-    private final String image;
-    private final String detail;
-    private final BigDecimal price;
-    private final Integer quantity;
     @Id
     @GeneratedValue
     private Long id;
 
-    @JsonCreator
+    private String name;
+
+    private String image;
+
+    private String detail;
+
+    private BigDecimal price;
+
+    private Integer quantity;
+
+    public Product() {
+
+    }
+
     public Product(
+            Long id,
             String name,
             String image,
             String detail,
             BigDecimal price,
             Integer quantity) {
+        this.id = id;
         this.name = name;
         this.image = image;
         this.detail = detail;
@@ -42,28 +49,47 @@ public class Product implements Serializable {
         return id;
     }
 
+    public void setId(Long id) {
+        this.id = id;
+    }
+
     public String getName() {
         return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
     }
 
     public String getImage() {
         return image;
     }
 
+    public void setImage(String image) {
+        this.image = image;
+    }
+
     public String getDetail() {
         return detail;
+    }
+
+    public void setDetail(String detail) {
+        this.detail = detail;
     }
 
     public BigDecimal getPrice() {
         return price;
     }
 
+    public void setPrice(BigDecimal price) {
+        this.price = price;
+    }
+
     public Integer getQuantity() {
         return quantity;
     }
 
-    @JsonGetter
-    public String getProduct() {
-        return this.name;
+    public void setQuantity(Integer quantity) {
+        this.quantity = quantity;
     }
 }
