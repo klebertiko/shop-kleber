@@ -1,6 +1,5 @@
 package br.com.kleber.shop.model;
 
-import com.fasterxml.jackson.annotation.JsonIgnore;
 import org.springframework.stereotype.Component;
 
 import javax.persistence.Entity;
@@ -11,7 +10,6 @@ import java.io.Serializable;
 import java.util.Collection;
 
 @Entity
-@Component
 public class Cart implements Serializable {
 
     @Id
@@ -19,24 +17,29 @@ public class Cart implements Serializable {
     private Long id;
 
     @OneToMany
-    private Collection<ItemCart> itemCart;
+    private Collection<CartItem> cartItems;
 
     private Customer customer;
+
+    public Cart() {
+
+    }
+
+    public Cart(Customer customer, Collection<CartItem> cartItems) {
+        this.customer = customer;
+        this.cartItems = cartItems;
+    }
 
     public Long getId() {
         return id;
     }
 
-    public void setId(Long id) {
-        this.id = id;
+    public Collection<CartItem> getCartItems() {
+        return cartItems;
     }
 
-    public Collection<ItemCart> getItemCart() {
-        return itemCart;
-    }
-
-    public void setItemCart(Collection<ItemCart> itemCart) {
-        this.itemCart = itemCart;
+    public void setCartItems(Collection<CartItem> cartItems) {
+        this.cartItems = cartItems;
     }
 
     public Customer getCustomer() {
@@ -46,4 +49,5 @@ public class Cart implements Serializable {
     public void setCustomer(Customer customer) {
         this.customer = customer;
     }
+
 }

@@ -1,5 +1,5 @@
 import {Component, OnInit} from "@angular/core";
-import {Http} from "@angular/http";
+import {CartService} from "../cart/cart.service";
 
 @Component({
   selector: 'navbar',
@@ -8,12 +8,21 @@ import {Http} from "@angular/http";
 })
 export class NavbarComponent implements OnInit {
 
-  public totalQuantity: any;
+  errorMessage: string;
+  cart: any;
 
-  constructor(private http: Http) {}
+  constructor(private cartService: CartService) {
+  }
+
+  getOrCreateCurrent() {
+    this.cartService.getOrCreateCurrent()
+      .subscribe(
+        cart => this.cart = cart,
+        error => this.errorMessage = <any>error);
+  }
 
   ngOnInit() {
-
+    this.getOrCreateCurrent();
   }
 
 }

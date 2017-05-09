@@ -1,5 +1,6 @@
 import {Component, OnInit} from "@angular/core";
 import {Http} from "@angular/http";
+import {CartService} from "../cart/cart.service";
 
 @Component({
   selector: 'app-shop',
@@ -8,25 +9,28 @@ import {Http} from "@angular/http";
 })
 export class ShopComponent implements OnInit {
 
-  products: any;
+  errorMessage: string;
   cart: any;
+  products: any;
 
-  constructor(private http: Http) {}
+  constructor(private http: Http, private cartService: CartService) {
+  }
 
   addToCart(product) {
-    this.http.post("/api/cart/add", {product: product, quantity: 1}).subscribe((data: any) => {
-      this.cart = JSON.parse(data._body)
-    })
+    this.cartService.addToCart(product)
+      .subscribe(
+        cart => this.cart = cart,
+        error => this.errorMessage = <any>error);
   }
 
   getProducts() {
-    this.http.get("/api/products").subscribe((data: any) => {
-      this.products = JSON.parse(data._body)
-    })
+    this.http.get("/api/products").subscribe(data => {
+      this.products = data.json()
+    });
   }
 
   ngOnInit(): void {
-    this.getProducts()
+    this.getProducts();
   }
 
 }

@@ -1,26 +1,19 @@
 package br.com.kleber.shop.repository;
 
 import br.com.kleber.shop.model.Customer;
+import org.springframework.data.jpa.repository.Query;
+import org.springframework.data.repository.PagingAndSortingRepository;
+import org.springframework.data.repository.query.Param;
 import org.springframework.stereotype.Repository;
 
-import java.util.Collections;
-import java.util.HashMap;
-import java.util.Map;
-
-/**
- * Created by renan on 05/04/2017.
- */
+import java.util.*;
 
 @Repository
-public class CustomerRepository {
+public interface CustomerRepository extends PagingAndSortingRepository<Customer, UUID> {
 
-    private final Map<String, Customer> customers = Collections.synchronizedMap(new HashMap<>());
+    @Query(" select customer " +
+            " from Customer customer " +
+            " where customer.email = ?1")
+    Optional<Customer> findByEmail(@Param("email") String email);
 
-    public CustomerRepository() {
-        this.customers.put("moip@email.com", new Customer("moip@email.com", "moip", ""));
-    }
-
-    public Customer findByEmail(String email) {
-        return this.customers.get(email);
-    }
 }
