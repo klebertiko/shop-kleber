@@ -1,0 +1,14 @@
+.glyphicon {
+  font-size: 40px;
+  color: #6495ed;
+  vertical-align: middle;
+  white-space: nowrap;
+}
+
+.badge {
+  font-size: 20px;
+  background-color: #6495ed;
+  color: #ffffff;
+  vertical-align: middle;
+  white-space: nowrap;
+}

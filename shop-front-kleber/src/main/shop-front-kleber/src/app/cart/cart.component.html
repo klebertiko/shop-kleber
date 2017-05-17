@@ -1,30 +1,56 @@
-<div *ngIf="cartItems == undefined">
-  <h3 class="text-center">Sem items no carrinho :(</h3>
+<div *ngIf="cart.cartItems.length == 0">
+  <h3 class="text-center">Seu </h3><span class="glyphicon glyphicon-shopping-cart" aria-hidden="true"></span>
+  <h3> esta vazio!</h3>
 </div>
-<table *ngIf="cartItems != undefined" class="table table-striped table-hover ">
+
+<table *ngIf="cart.cartItems.length >= 0" class="table table-hover">
   <thead>
   <tr>
-    <th>Quantity Amount</th>
-    <th>Product Name</th>
-    <th>Product Price</th>
-    <th>Product Image</th>
+    <th>Produto</th>
+    <th>Quantidade</th>
+    <th class="text-center">Preco</th>
+    <th></th>
   </tr>
   </thead>
-
   <tbody>
-  <tr *ngFor="let product of cart.cartItems">
-    <td><h4>{{product.quantity}}</h4></td>
-    <td><h4>{{product.name}}</h4></td>
-    <td><h4>{{product.price}}</h4></td>
-    <td><img src={{product.image}} width="100" height="100" /></td>
-    <td><button (click)="remove(product)" class="btn btn-xs btn-danger">Remove Product</button></td>
-  </tr>
-
-  <tr class="warning">
-    <td><h4></h4></td>
-    <td><h4>Total Items: {{totalQuantity}}</h4></td>
-    <td><h4>Total: ${{totalPrice}}</h4></td>
-    <td><button (click)="checkout(cart)" class="btn btn-md btn-success">Checkout</button></td>
+  <tr *ngFor="let cartItem of cart.cartItems">
+    <td class="col-sm-8 col-md-6">
+      <div class="media">
+        <a class="thumbnail pull-left"> <img class="media-object" src="{{cartItem.product.image}}" style="width: 120px; height: 100px;"></a>
+        <div class="media-body">
+          <h4 class="media-heading">{{cartItem.product.name}}</h4>
+        </div>
+      </div>
+    </td>
+    <td class="col-sm-1 col-md-1 text-center">
+      {{cartItem.quantity}}
+    </td>
+    <td class="col-sm-1 col-md-1 text-center"><strong>{{cartItem.product.price}}</strong></td>
+    <td class="col-sm-1 col-md-1">
+      <button (click)="remove(cartItem.product)" type="button" class="btn btn-danger">
+        <span class="glyphicon glyphicon-remove"></span> Remover do carrinho
+      </button>
+    </td>
   </tr>
   </tbody>
+  <tfoot>
+  <tr>
+    <td></td>
+    <td></td>
+    <td><h5>Subtotal<br>Estimated shipping</h5>
+      <h3>Total</h3></td>
+    <td class="text-right"><h5><strong>$24.59<br>$6.94</strong></h5>
+      <h3>$31.53</h3></td>
+  </tr>
+  <tr>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td>
+      <button type="button" class="btn btn-success">
+        <span class="glyphicon glyphicon-play"></span> Finalizar pedido
+      </button>
+    </td>
+  </tr>
+  </tfoot>
 </table>

@@ -7,9 +7,7 @@ import org.springframework.stereotype.Repository;
 
 import java.util.Collection;
 
-/**
- * Created by kleber on 4/24/17.
- */
+
 @Repository
 public interface ProductRepository extends PagingAndSortingRepository<Product, Long> {
 

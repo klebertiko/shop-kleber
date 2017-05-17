@@ -1,11 +1,6 @@
 package br.com.kleber.shop.model;
 
-import org.springframework.stereotype.Component;
-
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.Id;
-import javax.persistence.OneToMany;
+import javax.persistence.*;
 import java.io.Serializable;
 import java.util.Collection;
 
@@ -16,17 +11,14 @@ public class Cart implements Serializable {
     @GeneratedValue
     private Long id;
 
-    @OneToMany
+    @OneToMany(cascade = CascadeType.ALL)
     private Collection<CartItem> cartItems;
-
-    private Customer customer;
 
     public Cart() {
 
     }
 
     public Cart(Customer customer, Collection<CartItem> cartItems) {
-        this.customer = customer;
         this.cartItems = cartItems;
     }
 
@@ -40,14 +32,6 @@ public class Cart implements Serializable {
 
     public void setCartItems(Collection<CartItem> cartItems) {
         this.cartItems = cartItems;
-    }
-
-    public Customer getCustomer() {
-        return customer;
-    }
-
-    public void setCustomer(Customer customer) {
-        this.customer = customer;
     }
 
 }

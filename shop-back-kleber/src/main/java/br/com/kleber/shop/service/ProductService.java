@@ -6,11 +6,8 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.util.Collection;
-import java.util.Optional;
 
-/**
- * Created by kleber on 4/24/17.
- */
+
 @Service
 public class ProductService {
 
@@ -25,7 +22,11 @@ public class ProductService {
         return this.productRepository.findAll();
     }
 
-    public Optional<Product> findById(final Long id) {
-        return this.productRepository.findById(id);
+    public Product findOne(final Long id) {
+        return this.productRepository.findOne(id);
+    }
+
+    public void save(Product product) {
+        this.productRepository.save(product);
     }
 }

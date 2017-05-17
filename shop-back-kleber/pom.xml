@@ -83,8 +83,8 @@
             </snapshots>
         </repository>
         <repository>
-            <id>spring-snapshots</id>
-            <name>Spring Snapshots</name>
+            <id>spring-libs-snapshots</id>
+            <name>Spring Libs Snapshots</name>
             <url>https://repo.spring.io/libs-snapshot</url>
             <snapshots>
                 <enabled>true</enabled>
@@ -93,6 +93,14 @@
     </repositories>
 
     <pluginRepositories>
+        <pluginRepository>
+            <id>spring-libs-snapshots</id>
+            <name>Spring Libs Snapshots</name>
+            <url>https://repo.spring.io/libs-snapshot</url>
+            <snapshots>
+                <enabled>true</enabled>
+            </snapshots>
+        </pluginRepository>
         <pluginRepository>
             <id>spring-snapshots</id>
             <name>Spring Snapshots</name>

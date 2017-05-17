@@ -7,6 +7,7 @@ import org.springframework.stereotype.Service;
 
 import java.io.IOException;
 import java.util.Map;
+import java.util.Optional;
 
 /**
  * Created by kleber on 24/04/17.
@@ -24,7 +25,7 @@ public class CustomerService {
         this.moipService = moipService;
     }
 
-    public Customer findByEmail(final String email) {
+    public Optional<Customer> findByEmail(final String email) {
         return this.customerRepository.findByEmail(email);
     }
 

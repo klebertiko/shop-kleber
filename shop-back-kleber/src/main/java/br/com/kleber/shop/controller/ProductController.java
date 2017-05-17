@@ -10,9 +10,7 @@ import org.springframework.web.bind.annotation.RestController;
 
 import java.util.Collection;
 
-/**
- * Created by kleber on 4/24/17.
- */
+
 @RestController
 @RequestMapping("/api/products")
 public class ProductController {

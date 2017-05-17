@@ -20,6 +20,7 @@ import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 import java.io.PrintWriter;
 import java.nio.charset.MalformedInputException;
+import java.util.Optional;
 
 /**
  * Created by renan on 12/02/17.
@@ -71,13 +72,13 @@ public class SecurityHttpFilter extends GenericFilterBean {
                 this.responseError(HttpStatus.UNAUTHORIZED.value(), "Invalid Authorization Token", path, httpResponse);
             }
 
-            Customer customer = this.customerRepository.findByEmail(accountId);
+            Optional<Customer> customer = this.customerRepository.findByEmail(accountId);
 
             if (customer == null) {
                 this.responseError(HttpStatus.UNAUTHORIZED.value(), "Invalid Authorization Token", path, httpResponse);
             }
 
-            this.authenticationHelper.auth(customer);
+            this.authenticationHelper.auth(customer.get());
 
             chain.doFilter(request, response);
         } catch (IllegalArgumentException | ExpiredJwtException | MalformedInputException e) {

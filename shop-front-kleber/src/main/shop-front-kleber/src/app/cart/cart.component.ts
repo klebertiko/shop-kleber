@@ -8,19 +8,21 @@ import {CartService} from "./cart.service";
 })
 export class CartComponent implements OnInit {
 
+  errorMessage: string;
+  cart: any;
+
   constructor(private cartService: CartService) {
   }
 
-
-  remove(product) {
-
+  getCurrent() {
+    this.cartService.getCurrent()
+      .subscribe(
+        cart => this.cart = cart,
+        error => this.errorMessage = <any>error);
   }
 
-  checkout(cart) {
-
+  ngOnInit(): void {
+    this.getCurrent();
   }
 
-  ngOnInit() {
-
-  }
 }

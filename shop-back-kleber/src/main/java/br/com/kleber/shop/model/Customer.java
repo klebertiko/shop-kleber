@@ -18,6 +18,8 @@ public class Customer {
 
     private String password;
 
+    private String paymentIdentification;
+
     public Customer() {
 
     }
@@ -45,5 +47,13 @@ public class Customer {
 
     public void setPassword(String password) {
         this.password = password;
+    }
+
+    public String getPaymentIdentification() {
+        return paymentIdentification;
+    }
+
+    public void setPaymentIdentification(String paymentIdentification) {
+        this.paymentIdentification = paymentIdentification;
     }
 }

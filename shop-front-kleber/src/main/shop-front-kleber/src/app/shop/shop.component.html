@@ -1,3 +1,9 @@
+<div *ngIf="cart" class="cart panel panel-title">
+  <a routerLink="/cart" class="btn btn-lg panel-body">
+    <span class="glyphicon glyphicon-shopping-cart" aria-hidden="true"></span>
+    <span class="badge">{{cart.cartItems.length}}</span>
+  </a>
+</div>
 <div *ngIf="products" class="row text-center">
   <div *ngFor="let product of products" class="col-md-4 col-sm-6 hero-feature">
     <div class="thumbnail">

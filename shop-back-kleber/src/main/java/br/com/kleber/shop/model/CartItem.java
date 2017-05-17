@@ -16,6 +16,8 @@ public class CartItem implements Serializable {
     @ManyToOne
     private Product product;
 
+    private Integer quantity;
+
     public Long getId() {
         return id;
     }
@@ -32,4 +34,11 @@ public class CartItem implements Serializable {
         this.product = product;
     }
 
+    public Integer getQuantity() {
+        return quantity;
+    }
+
+    public void setQuantity(Integer quantity) {
+        this.quantity = quantity;
+    }
 }

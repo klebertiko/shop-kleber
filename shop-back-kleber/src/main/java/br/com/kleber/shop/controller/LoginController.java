@@ -12,9 +12,7 @@ import javax.validation.Valid;
 import java.io.IOException;
 import java.util.Map;
 
-/**
- * Created by kleber on 4/24/17.
- */
+
 @RestController
 @RequestMapping("/api/login")
 public class LoginController {

@@ -18,20 +18,20 @@ export class CartService {
   constructor(private http: Http) {
   }
 
-  getOrCreateCurrent(): Observable<any> {
+  getCurrent(): Observable<any> {
     return this.http.get(this.currentCartEndpoint)
       .map(data => this.cart = data.json())
       .catch(this.handleError);
   }
 
   addToCart(product): Observable<any> {
-    return this.http.post(this.addToCartEndpoint, {product: product})
+    return this.http.post(this.addToCartEndpoint, product)
       .map(data => this.cart = data.json())
       .catch(this.handleError);
   }
 
   removeFromCart(product): Observable<any> {
-    return this.http.post(this.removeFromCartEndpoint, {product: product})
+    return this.http.post(this.removeFromCartEndpoint, product)
       .map(data => this.cart = data.json())
       .catch(this.handleError);
   }

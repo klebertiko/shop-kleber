@@ -10,6 +10,7 @@ import org.springframework.stereotype.Service;
 import java.io.IOException;
 import java.util.HashMap;
 import java.util.Map;
+import java.util.Optional;
 
 /**
  * Created by kleber on 24/04/17.
@@ -39,12 +40,12 @@ public class LoginService {
     }
 
     public Customer auth(String email, String password) throws JsonProcessingException {
-        Customer customer = this.customerService.findByEmail(email);
+        Optional<Customer> customer = this.customerService.findByEmail(email);
 
-        if (customer == null || !password.equals(customer.getPassword())) {
+        if (customer == null || !password.equals(customer.get().getPassword())) {
             throw new AccessDeniedShopKleberException(LOGIN_ERROR);
         }
 
-        return customer;
+        return customer.get();
     }
 }

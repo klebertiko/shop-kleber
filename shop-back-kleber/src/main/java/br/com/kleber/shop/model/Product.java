@@ -31,7 +31,6 @@ public class Product implements Serializable {
     }
 
     public Product(
-            Long id,
             String name,
             String image,
             String detail,

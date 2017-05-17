@@ -10,9 +10,7 @@ import org.springframework.web.bind.annotation.RestController;
 import java.io.IOException;
 import java.util.Map;
 
-/**
- * Created by kleber on 4/24/17.
- */
+
 @RestController
 @RequestMapping("/secure/api/payment")
 public class PaymentController {

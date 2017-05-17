@@ -13,3 +13,37 @@ body {
   padding: 3rem 1.5rem;
   text-align: center;
 }
+
+.btn-primary {
+  border-color: #6495ed;
+  background-color: #6495ed;
+}
+
+.btn-primary:hover {
+  border-color: #406194;
+  background-color: #406194;
+}
+
+.btn-success {
+  border-color: #008000;
+  background-color: #008000;
+}
+
+.btn-success:hover {
+  border-color: #006400;
+  background-color: #006400;
+}
+
+.btn-danger {
+  border-color: #cd5c5c;
+  background-color: #cd5c5c;
+}
+
+.btn-danger:hover {
+  border-color: #ff0000;
+  background-color: #ff0000;
+}
+
+.padding-right-5 {
+  padding-right: 5px;
+}

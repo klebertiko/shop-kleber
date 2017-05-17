@@ -16,6 +16,13 @@ export class ShopComponent implements OnInit {
   constructor(private http: Http, private cartService: CartService) {
   }
 
+  getCurrent() {
+    this.cartService.getCurrent()
+      .subscribe(
+        cart => this.cart = cart,
+        error => this.errorMessage = <any>error);
+  }
+
   addToCart(product) {
     this.cartService.addToCart(product)
       .subscribe(
@@ -31,6 +38,7 @@ export class ShopComponent implements OnInit {
 
   ngOnInit(): void {
     this.getProducts();
+    this.getCurrent();
   }
 
 }
