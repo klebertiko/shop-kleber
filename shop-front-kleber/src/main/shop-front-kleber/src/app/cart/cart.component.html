@@ -2,8 +2,7 @@
   <h3 class="text-center">Seu </h3><span class="glyphicon glyphicon-shopping-cart" aria-hidden="true"></span>
   <h3> esta vazio!</h3>
 </div>
-
-<table *ngIf="cart.cartItems.length >= 0" class="table table-hover">
+<table *ngIf="cart.cartItems.length >= 0" class="table table-responsive table-hover">
   <thead>
   <tr>
     <th>Produto</th>
@@ -25,7 +24,7 @@
     <td class="col-sm-1 col-md-1 text-center">
       {{cartItem.quantity}}
     </td>
-    <td class="col-sm-1 col-md-1 text-center"><strong>{{cartItem.product.price}}</strong></td>
+    <td class="col-sm-1 col-md-1 text-center"><strong>{{cartItem.product.price | currency:'BRL':true}}</strong></td>
     <td class="col-sm-1 col-md-1">
       <button (click)="remove(cartItem.product)" type="button" class="btn btn-danger">
         <span class="glyphicon glyphicon-remove"></span> Remover do carrinho
@@ -37,10 +36,8 @@
   <tr>
     <td></td>
     <td></td>
-    <td><h5>Subtotal<br>Estimated shipping</h5>
-      <h3>Total</h3></td>
-    <td class="text-right"><h5><strong>$24.59<br>$6.94</strong></h5>
-      <h3>$31.53</h3></td>
+    <td><h3>Total</h3></td>
+    <td class="text-right"><h3>R$1000000000000</h3></td>
   </tr>
   <tr>
     <td></td>
